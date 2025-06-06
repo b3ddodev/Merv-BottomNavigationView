@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- res/values/attrs.xml -->
+<resources>
+    <declare-styleable name="MervBottomNavigationView">
+        <!-- Alt gezinme çubuğunun arka plan rengi -->
+        <attr name="mBottomNavMorphBackgroundColor" format="color" />
+
+        <!-- Arka planın gölge katmanının kalınlığı (boyut) -->
+        <attr name="mBottomNavMorphBackgroundShadowLayerSize" format="dimension" />
+
+        <!-- Seçili öğe etrafındaki dairenin rengi -->
+        <attr name="mBottomNavCircleColor" format="color" />
+
+        <!-- Dairenin gölge katmanının kalınlığı (boyut) -->
+        <attr name="mBottomNavCircleShadowLayerSize" format="dimension" />
+
+        <!-- Seçili ikonun rengi -->
+        <attr name="mBottomNavSelectedIconColor" format="color" />
+
+        <!-- Seçilmeyen ikonların rengi -->
+        <attr name="mBottomNavUnselectedIconColor" format="color" />
+
+        <!-- Seçili ikonun boyutu -->
+        <attr name="mBottomNavSelectedIconSize" format="dimension" />
+
+        <!-- Seçilmeyen ikonların boyutu -->
+        <attr name="mBottomNavUnselectedIconSize" format="dimension" />
+
+        <!-- Menü metinlerinin rengi -->
+        <attr name="mBottomNavTextColor" format="color" />
+
+        <!-- Menü metinlerinin boyutu -->
+        <attr name="mBottomNavTextSize" format="dimension" />
+
+        <!-- Menü metinlerinin kalın (bold) görünmesi için, true/false -->
+        <attr name="mBottomNavTextFakeBold" format="boolean" />
+
+        <!-- Menü metinleri için özel yazı tipi referansı -->
+        <attr name="mBottomNavTextChooseFont" format="reference" />
+
+        <!-- Menü metinlerinin üstten boşluk mesafesi -->
+        <attr name="mBottomNavTextMarginTop" format="dimension" />
+
+        <!-- Başlangıçta seçili olacak menü öğesinin indeksi -->
+        <attr name="mBottomNavSelectedIndex" format="integer" />
+
+        <!-- Menü öğelerinin tanımlandığı menu resource dosyası -->
+        <attr name="mBottomNavMenuResource" format="reference" />
+
+        <!-- Animasyon interpolatör tipi (hareketin hız eğrisi) -->
+        <attr name="mBottomNavAnimationInterpolator" format="enum">
+            <enum name="LINEAR" value="0" /> <!-- Sabit hız -->
+            <enum name="ACCELERATE" value="1" /> <!-- Hızlanarak -->
+            <enum name="DECELERATE" value="2" /> <!-- Yavaşlayarak -->
+            <enum name="ACCELERATE_DECELERATE" value="3" /> <!-- Hızlanıp yavaşlayarak -->
+            <enum name="OVERSHOOT" value="4" /> <!-- Hedefin biraz ötesine geçip geri döner -->
+            <enum name="BOUNCE" value="5" /> <!-- Zıplama etkisi -->
+            <enum name="NONE" value="6" /> <!-- Animasyon yok -->
+            <enum name="ANTICIPATE" value="7" /> <!-- Başlangıçta geri çekilir sonra ileri gider -->
+            <enum name="ANTICIPATE_OVERSHOOT" value="8" /> <!-- Geri çekilip hedefin ötesine geçer -->
+            <enum name="FAST_OUT_SLOW_IN" value="9" /> <!-- Başta hızlı, sonunda yavaş -->
+        </attr>
+
+        <!-- Animasyonun süresi (milisaniye cinsinden) -->
+        <attr name="mBottomNavItemAnimationDuration" format="integer" />
+    </declare-styleable>
+</resources>
