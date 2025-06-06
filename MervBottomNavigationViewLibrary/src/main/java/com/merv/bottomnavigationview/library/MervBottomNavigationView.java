@@ -1,5 +1,6 @@
 package com.merv.bottomnavigationview.library;
 
+import androidx.core.content.res.ResourcesCompat;
 import android.animation.AnimatorListenerAdapter;
 import android.animation.AnimatorSet;
 import android.animation.ValueAnimator;
@@ -16,7 +17,6 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.widget.PopupMenu;
@@ -1332,7 +1332,7 @@ public class MervBottomNavigationView extends View {
      * - Menü öğe sayısını sıfırlar.
      * - Görünümü yeniden çizilmesi için invalidate() çağrılır.
      */
-    public void ClearItem() {
+    public void ClearReloadItems() {
         mBottomNavMenuRes = 0;
         for (int mI = 0; mI < MAX_ITEMS_SIZE; mI++) {
             mBottomNavItemIcons[mI] = null;
