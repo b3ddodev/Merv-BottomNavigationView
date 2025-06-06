@@ -48,7 +48,7 @@ publishing {
         create("release", MavenPublication::class) {
             groupId = "com.github.b3ddodev"
             artifactId = "Merv-BottomNavigationView"
-            version = "1.1.1-0103-rls"
+            version = "1.1.2-0103-rls"
 
             afterEvaluate {
                 from(components["release"])
