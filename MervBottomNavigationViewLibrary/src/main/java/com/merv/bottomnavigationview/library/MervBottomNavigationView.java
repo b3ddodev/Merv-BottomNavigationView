@@ -469,7 +469,7 @@ public class MervBottomNavigationView extends View {
             );
             setAddItem(
                     ContextCompat.getDrawable(getContext(), R.drawable.ic_preview_add),
-                    "Add"      // ← Buraya boş değil “Add” yazıyoruz
+                    "Add"
             );
             setAddItem(
                     ContextCompat.getDrawable(getContext(), R.drawable.ic_preview_reaction),
